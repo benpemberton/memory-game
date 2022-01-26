@@ -1,0 +1,8 @@
+.card-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1 1 20%;
+}
