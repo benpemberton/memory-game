@@ -1,8 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap");
+
+body {
+  background-color: #f7c7db;
+}
+
+h1,
+p {
+  font-family: "Sedgwick Ave", cursive;
+  color: #131112;
+}
+
+.game-wrap {
+  padding: 1% 8%;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.score-area {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.score-area p:first-child {
+  margin-right: 10%;
+}
+
 .card-grid {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1%;
+  margin-top: 3%;
 }
 
 .card {
-  flex: 1 1 20%;
+  display: flex;
+  justify-content: center;
+  flex: 1 1 15%;
+  margin: 1% 0;
+}
+
+.img-wrap {
+  max-height: 350px;
+}
+
+.img-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.726);
+  transition: box-shadow 0.2s ease;
+}
+
+.img-wrap img:hover {
+  box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.726);
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 20%;
+    margin: 1% 0;
+  }
 }

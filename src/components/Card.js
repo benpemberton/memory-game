@@ -1,7 +1,12 @@
 export default function Card(props) {
   return (
     <div className="card">
-      <img src={props.image}></img>
+      <div className="img-wrap">
+        <img
+          src={props.image}
+          onClick={() => props.handleClick(props.name)}
+        ></img>
+      </div>
     </div>
   );
 }
